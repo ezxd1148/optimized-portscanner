@@ -1,0 +1,180 @@
+(optimized-portscanner) PS C:\Users\Dhare\Downloads\Odeng\optimized-portscanner> uv run python -m cProfile -s cumtime .\src\main.py
+Port 10 is closed on scanme.nmap.org
+         4450 function calls (4443 primitive calls) in 1.056 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      2/1    0.000    0.000    1.056    1.056 {built-in method builtins.exec}
+        1    0.000    0.000    1.056    1.056 main.py:1(<module>)
+        1    0.000    0.000    1.030    1.030 main.py:11(check_port)
+        1    1.028    1.028    1.028    1.028 {method 'connect' of '_socket.socket' objects}
+      2/1    0.000    0.000    0.024    0.024 <frozen importlib._bootstrap>:1360(_find_and_load)
+      2/1    0.000    0.000    0.023    0.023 <frozen importlib._bootstrap>:1308(_find_and_load_unlocked)
+      2/1    0.000    0.000    0.020    0.020 <frozen importlib._bootstrap>:914(_load_unlocked)
+        1    0.000    0.000    0.020    0.020 <frozen importlib._bootstrap_external>:753(exec_module)
+      5/2    0.000    0.000    0.018    0.009 <frozen importlib._bootstrap>:483(_call_with_frames_removed)
+        1    0.000    0.000    0.018    0.018 socket.py:1(<module>)
+        4    0.002    0.000    0.008    0.002 enum.py:880(_convert_)
+        2    0.000    0.000    0.005    0.002 <frozen importlib._bootstrap>:809(module_from_spec)
+        1    0.000    0.000    0.005    0.005 <frozen importlib._bootstrap_external>:1051(create_module)
+        1    0.005    0.005    0.005    0.005 {built-in method _imp.create_dynamic}
+        2    0.000    0.000    0.004    0.002 <frozen importlib._bootstrap>:1243(_find_spec)
+        2    0.000    0.000    0.004    0.002 <frozen importlib._bootstrap_external>:1284(find_spec)
+        2    0.000    0.000    0.003    0.002 <frozen importlib._bootstrap_external>:1255(_get_spec)
+        1    0.000    0.000    0.003    0.003 <frozen importlib._bootstrap_external>:1059(exec_module)
+        4    0.001    0.000    0.003    0.001 enum.py:1740(convert_class)
+        1    0.003    0.003    0.003    0.003 {built-in method _imp.exec_dynamic}
+        7    0.000    0.000    0.003    0.000 <frozen importlib._bootstrap_external>:1357(find_spec)
+        1    0.002    0.002    0.002    0.002 socket.py:224(__init__)
+        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap_external>:826(get_code)
+        1    0.002    0.002    0.002    0.002 {built-in method builtins.print}
+       33    0.001    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:101(_path_join)
+       12    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:145(_path_stat)
+       12    0.001    0.000    0.001    0.000 {built-in method nt.stat}
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:509(_compile_bytecode)
+        1    0.001    0.001    0.001    0.001 {built-in method marshal.loads}
+      236    0.000    0.000    0.001    0.000 socket.py:91(<lambda>)
+      237    0.000    0.000    0.001    0.000 socket.py:96(<lambda>)
+      942    0.001    0.000    0.001    0.000 {method 'isupper' of 'str' objects}
+      234    0.000    0.000    0.001    0.000 socket.py:81(<lambda>)
+      235    0.000    0.000    0.001    0.000 socket.py:86(<lambda>)
+        9    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1233(_path_importer_cache)
+      821    0.001    0.000    0.001    0.000 {method 'startswith' of 'str' objects}
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1220(_path_hooks)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:947(get_data)
+       45    0.000    0.000    0.000    0.000 enum.py:811(__setattr__)
+       35    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+       38    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x00007FFECA3C4D90}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1408(_fill_cache)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+        4    0.000    0.000    0.000    0.000 enum.py:480(__new__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1449(path_hook_for_FileFinder)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:419(__enter__)
+        1    0.000    0.000    0.000    0.000 {built-in method nt.listdir}
+      101    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _io.open_code}
+        1    0.000    0.000    0.000    0.000 socket.py:247(__repr__)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:155(_path_is_mode_type)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:736(_init_module_attrs)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:985(find_spec)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:304(acquire)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1331(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen os>:44(_get_exports_list)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:190(_path_abspath)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:239(cache_from_source)
+        1    0.000    0.000    0.000    0.000 <frozen zipimport>:67(__init__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:164(_path_isfile)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:635(cached)
+      242    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1352(_get_spec)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:369(_get_cached)
+       31    0.000    0.000    0.000    0.000 enum.py:36(_is_descriptor)
+       39    0.000    0.000    0.000    0.000 enum.py:46(_is_dunder)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+      135    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+       31    0.000    0.000    0.000    0.000 enum.py:77(_is_private)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:162(__enter__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:966(path_stats)
+        1    0.000    0.000    0.000    0.000 <frozen abc>:105(__new__)
+       80    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:560(spec_from_file_location)
+        1    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:169(_path_isdir)
+        4    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.dir}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:124(setdefault)
+      102    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        4    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+      108    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:429(_get_module_lock)
+       31    0.000    0.000    0.000    0.000 enum.py:57(_is_sunder)
+       53    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:423(__exit__)
+        1    0.000    0.000    0.000    0.000 {method 'getsockname' of '_socket.socket' objects}
+       74    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:177(_path_isabs)
+        1    0.000    0.000    0.000    0.000 socket.py:523(family)
+        1    0.000    0.000    0.000    0.000 socket.py:218(socket)
+        2    0.000    0.000    0.000    0.000 socket.py:102(_intenum_converter)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:372(release)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:137(_path_split)
+        1    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:74(__new__)
+       35    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+       37    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 enum.py:677(__call__)
+        1    0.000    0.000    0.000    0.000 {method 'settimeout' of '_socket.socket' objects}
+       36    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:494(_verbose_message)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:424(_classify_pyc)
+        4    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        1    0.000    0.000    0.000    0.000 socket.py:683(SocketIO)
+       31    0.000    0.000    0.000    0.000 enum.py:903(<lambda>)
+        1    0.000    0.000    0.000    0.000 {built-in method _abc._abc_init}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:89(_unpack_uint32)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1131(find_spec)
+        2    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:448(cb)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:648(parent)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1229(__exit__)
+       13    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+       18    0.000    0.000    0.000    0.000 enum.py:781(<genexpr>)
+       16    0.000    0.000    0.000    0.000 enum.py:90(_is_single_bit)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:139(<genexpr>)
+       15    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method nt._path_splitroot}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:457(_validate_timestamp_pyc)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:232(__init__)
+        1    0.000    0.000    0.000    0.000 socket.py:529(type)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1225(__enter__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:82(remove)
+        7    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:67(_relax_case)
+        2    0.000    0.000    0.000    0.000 enum.py:777(__iter__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:79(__init__)
+        4    0.000    0.000    0.000    0.000 enum.py:789(__members__)
+        8    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+       12    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+       12    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        4    0.000    0.000    0.000    0.000 enum.py:1724(_simple_enum)
+        4    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:401(_check_name_wrapper)
+        4    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.RLock' objects}
+        4    0.000    0.000    0.000    0.000 {method 'items' of 'mappingproxy' objects}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1337(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {method 'getpeername' of '_socket.socket' objects}
+        2    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 enum.py:1146(__new__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
+        4    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        4    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1040(__init__)
+        3    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 _virtualenv.py:50(find_spec)
+        4    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+        3    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        2    0.000    0.000    0.000    0.000 {built-in method _imp.find_frozen}
+        1    0.000    0.000    0.000    0.000 {built-in method nt.getcwd}
+        1    0.000    0.000    0.000    0.000 {method '__enter__' of '_io._IOBase' objects}
+        2    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+        4    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        1    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'removeprefix' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _weakref._remove_dead_weakref}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:602(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'fileno' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 socket.py:215(_GiveupOnSendfile)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:415(__init__)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:656(has_location)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:158(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:917(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:750(create_module)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:942(get_filename)
